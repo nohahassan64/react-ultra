@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalStyle from './GlobalStyles';
-import { BrowserRouter , Switch , Route } from 'react-router-dom';
+import { BrowserRouter as Router , Switch , Route } from 'react-router-dom';
 import  Home from './Pages/HomePage/Home'
 import { Navbar , Footer } from './components'
 import Services from './Pages/Services/Services';
@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
     <GlobalStyle />
     <ScrollToTop />
       <Navbar />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/sign-up"  component={SingUp} />
       </Switch>
       <Footer />
-    </BrowserRouter>
+    </Router>
   );
 }
 
