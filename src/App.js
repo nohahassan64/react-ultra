@@ -15,11 +15,11 @@ function App() {
     <ScrollToTop />
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/services"  component={Services} />
-        <Route path="/products"  component={Products} />
-        <Route path="/sign-up"  component={SingUp} />
-        </Switch>
+        <Route path='/' exact={false} component={Home} />
+        <Route path="/services" component={Services} />
+        <Route path="/products" component={Products} />
+        <Route path="/sign-up" component={SingUp} />
+      </Switch>
       <Footer />
     </Router>
   );
