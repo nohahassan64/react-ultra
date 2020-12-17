@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/react-ultra/static/js/main.de607428.chunk.js",
-    "main.js.map": "/react-ultra/static/js/main.de607428.chunk.js.map",
+    "main.js": "/react-ultra/static/js/main.e871daa7.chunk.js",
+    "main.js.map": "/react-ultra/static/js/main.e871daa7.chunk.js.map",
     "runtime-main.js": "/react-ultra/static/js/runtime-main.0daf4c60.js",
     "runtime-main.js.map": "/react-ultra/static/js/runtime-main.0daf4c60.js.map",
     "static/js/2.0fb36e0a.chunk.js": "/react-ultra/static/js/2.0fb36e0a.chunk.js",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.0daf4c60.js",
     "static/js/2.0fb36e0a.chunk.js",
-    "static/js/main.de607428.chunk.js"
+    "static/js/main.e871daa7.chunk.js"
   ]
 }
