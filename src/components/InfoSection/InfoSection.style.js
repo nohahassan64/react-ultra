@@ -6,11 +6,10 @@ export const InfoSec = styled.div`
     background: ${({lightBg}) => (lightBg ? "#fff" : "#101522")};
 `;
 export const InfoRow = styled.div`
-    margin: 0 -15px -15px --15px;
+    margin: 0 -15px -15px -15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex-direction: ${({imgStart}) => imgStart ? 'row-reverse' : 'row'};
 `;
 export const InfoColumn = styled.div`
     margin-bottom: 15px;

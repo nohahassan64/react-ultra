@@ -1,7 +1,6 @@
 export const homeObjOne = {
     lightBg: false,
     primary: true,
-    imgStart: '',
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
@@ -11,12 +10,11 @@ export const homeObjOne = {
     buttonLabel: 'Get Started',
     srcImage: require('../../images/01.svg').default,
     alt: 'Image',
-    start: ''
+    start: false
 };
 export const homeObjTwo = {
     lightBg: true,
     primary: false,
-    imgStart: 'start',
     lightTopLine: false,
     lightText: false,
     lightTextDesc: false,
@@ -26,12 +24,11 @@ export const homeObjTwo = {
     buttonLabel: 'Get Started',
     srcImage: require('../../images/profile.jpg').default,
     alt: 'Image',
-    start: 'true'
+    start: true
 };
 export const homeObjThree = {
     lightBg: false,
     primary: true,
-    imgStart: '',
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
@@ -41,12 +38,11 @@ export const homeObjThree = {
     buttonLabel: 'Get Started',
     srcImage: require('../../images/02.svg').default,
     alt: 'Image',
-    start: ''
+    start: false
 };
 export const homeObjFour = {
     lightBg: false,
     primary: true,
-    imgStart: 'start',
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
@@ -56,5 +52,5 @@ export const homeObjFour = {
     buttonLabel: 'Get Started',
     srcImage: require('../../images/03.svg').default,
     alt: 'Image',
-    start: 'true'
+    start: true
 };

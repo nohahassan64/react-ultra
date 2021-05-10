@@ -6,7 +6,6 @@ import { InfoSec, InfoRow , InfoColumn , TextWrapper , TopLine , Heading , SubTi
 const InfoSection = ({
     primary,
     lightBg,
-    imgStart,
     lightTopLine,
     lightText,
     lightTextDesc,
@@ -22,7 +21,7 @@ const InfoSection = ({
         <>
             <InfoSec lightBg={lightBg}>
                 <Container>
-                    <InfoRow imgStart={imgStart}>
+                    <InfoRow>
                         <InfoColumn>
                             <TextWrapper>
                                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
