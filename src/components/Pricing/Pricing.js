@@ -1,7 +1,5 @@
 import React from 'react';
 import { Button } from '../../GlobalStyles';
-import { GiCrystalBars } from 'react-icons/gi';
-import { GiCutDiamond, GiRock } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import {
   PricingSection,
@@ -17,6 +15,7 @@ import {
   PricingCardFeatures,
   PricingCardFeature
 } from './Pricing.style';
+import { pricingData } from './data';
 
 function Pricing() {
   return (
@@ -25,54 +24,27 @@ function Pricing() {
         <PricingWrapper>
           <PricingHeading>Our Services</PricingHeading>
           <PricingContainer>
-            <PricingCard to='/sign-up'>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiRock />
-                </PricingCardIcon>
-                <PricingCardPlan>Starter Pack</PricingCardPlan>
-                <PricingCardCost>$99.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>100 New Users</PricingCardFeature>
-                  <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard>
-            <PricingCard to='/sign-up'>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiCrystalBars />
-                </PricingCardIcon>
-                <PricingCardPlan>Gold Rush</PricingCardPlan>
-                <PricingCardCost>$299.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>1000 New Users</PricingCardFeature>
-                  <PricingCardFeature>$50,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard>
-            <PricingCard to='/sign-up'>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiCutDiamond />
-                </PricingCardIcon>
-                <PricingCardPlan>Diamond Kings</PricingCardPlan>
-                <PricingCardCost>$999.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>Unlimited Users</PricingCardFeature>
-                  <PricingCardFeature>Unlimited Budget</PricingCardFeature>
-                  <PricingCardFeature>24/7 Support</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard>
+            {pricingData.map( item => {
+              const { id , icon , head , price , length , feature1 , feature2 , feature3 , button} = item;
+              return(
+                <PricingCard to='/sign-up' key={id}>
+                  <PricingCardInfo>
+                    <PricingCardIcon>
+                      {icon}
+                    </PricingCardIcon>
+                    <PricingCardPlan>{head}</PricingCardPlan>
+                    <PricingCardCost>{price}</PricingCardCost>
+                    <PricingCardLength>{length}</PricingCardLength>
+                    <PricingCardFeatures>
+                      <PricingCardFeature>{feature1}</PricingCardFeature>
+                      <PricingCardFeature>{feature2}</PricingCardFeature>
+                      <PricingCardFeature>{feature3}</PricingCardFeature>
+                    </PricingCardFeatures>
+                    <Button primary>{button}</Button>
+                  </PricingCardInfo>
+                </PricingCard>
+              );
+            })}
           </PricingContainer>
         </PricingWrapper>
       </PricingSection>
